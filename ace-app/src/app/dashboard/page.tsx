@@ -1,7 +1,7 @@
 import { auth, currentUser } from "@clerk/nextjs/server";
 
 export default async function Dashboard() {
-  // Await the promise here
+  // ✅ Await the promise
   const { userId } = await auth();
   const user = await currentUser();
 
