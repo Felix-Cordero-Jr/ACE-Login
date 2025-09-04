@@ -5,17 +5,15 @@ import { SignIn, SignUp } from "@clerk/nextjs";
 import { useState } from "react";
 
 export default function Home() {
-  const [mode, setMode] = useState<"login" | "signup">("login");
+  const [mode, setMode] = useState("login");
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-white relative">
       {/* App Title */}
-      <h1 className="text-5xl font-bold text-orange-400 mb-6">Ace</h1>
+      <h1 className="text-5xl font-bold text-ace mb-6">Ace</h1>
 
       {/* Card */}
-      <div className=" w-full max-w-sm text-center relative z-10">
-      
-
+      <div className="bg-gray-100 shadow-lg rounded-2xl w-full max-w-sm text-center relative z-10">
         
 
         {/* Clerk Auth */}
@@ -24,7 +22,7 @@ export default function Home() {
             appearance={{
               elements: {
                 formButtonPrimary:
-                  "bg-teal-600 hover:bg-teal-700 text-white rounded-full px-4 py-2 w-full",
+                  "bg-primary hover:bg-teal-700 text-white rounded-full px-4 py-2 w-full",
               },
             }}
             redirectUrl="/dashboard"
@@ -34,14 +32,14 @@ export default function Home() {
             appearance={{
               elements: {
                 formButtonPrimary:
-                  "bg-teal-600 hover:bg-teal-700 text-white rounded-full px-4 py-2 w-full",
+                  "bg-primary hover:bg-teal-700 text-white rounded-full px-4 py-2 w-full",
               },
             }}
             redirectUrl="/dashboard"
           />
         )}
 
-        
+       
 
         {/* Footer */}
         <p className="text-xs text-gray-500 mt-6">
