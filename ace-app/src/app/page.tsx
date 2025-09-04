@@ -13,11 +13,10 @@ export default function Home() {
       <h1 className="text-5xl font-bold text-orange-400 mb-6">Ace</h1>
 
       {/* Card */}
-      <div className="w-full max-w-sm text-center relative z-10">
-    
+      <div className=" w-full max-w-sm text-center relative z-10">
+      
 
-        {/* Title */}
-        <p className="text-lg font-medium mb-6"></p>
+        
 
         {/* Clerk Auth */}
         {mode === "login" ? (
@@ -25,7 +24,7 @@ export default function Home() {
             appearance={{
               elements: {
                 formButtonPrimary:
-                  "bg-teal-600 hover:bg-teal-00 text-white rounded-full px-4 py-2 w-full",
+                  "bg-teal-600 hover:bg-teal-700 text-white rounded-full px-4 py-2 w-full",
               },
             }}
             redirectUrl="/dashboard"
